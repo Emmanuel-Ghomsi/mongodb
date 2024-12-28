@@ -19,6 +19,8 @@ services:
       ME_CONFIG_MONGODB_ADMINUSERNAME: hkdigitals
       ME_CONFIG_MONGODB_ADMINPASSWORD: hkdigitals
       ME_CONFIG_MONGODB_URL: mongodb://hkdigitals:hkdigitals@mongo:27017/
+      ME_CONFIG_OPTIONS_EDIT: "true"
+      ME_CONFIG_MONGODB_ENABLE_ADMIN: "true"
     depends_on:
       - mongo
 
