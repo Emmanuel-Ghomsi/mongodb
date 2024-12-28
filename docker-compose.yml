@@ -21,11 +21,6 @@ services:
       ME_CONFIG_MONGODB_URL: mongodb://hkdigitals:hkdigitals@localhost:27017/
     depends_on:
       - mongo
-    entrypoint: >
-      sh -c "
-      ./wait-for-it.sh localhost:27017 -- 
-      && npm start
-      "
 
 volumes:
   mongo_data:  # Définition du volume persistant
